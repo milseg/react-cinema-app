@@ -19,7 +19,9 @@
     "lint": "eslint src/**/*.js* -c eslintrc.json",
     "lint:config": "eslint --print-config",
     "lint:help": "eslint -h",
-    "lint:debug": "eslint src/**/*.js* --debug"
+    "lint:debug": "eslint src/**/*.js* --debug",
+    "prettier:check": "prettier --check src/**/*.{js,jsx,json}",
+    "prettier:write": "prettier --write src/**/*.{js,jsx,json}"
   },
   "eslintConfig": {
     "extends": [
@@ -48,6 +50,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-standard": "^5.0.0"
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^2.4.1"
   }
 }
