@@ -15,7 +15,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src/**/*.js* -c eslintrc.json",
+    "lint:config": "eslint --print-config",
+    "lint:help": "eslint -h",
+    "lint:debug": "eslint src/**/*.js* --debug"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +38,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.1",
+    "eslint-plugin-jest": "^25.0.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-standard": "^5.0.0"
   }
 }
